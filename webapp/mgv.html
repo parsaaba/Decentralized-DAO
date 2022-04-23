@@ -1,0 +1,154 @@
+<!doctype html>
+
+
+<html>
+	
+	<head>
+		
+		<meta charset="UTF-8">
+
+		<title>My DAO</title>
+		
+		
+	
+		<style type="text/css">
+		
+		@IMPORT URL("mgv.css")
+		
+		</style>
+	
+	
+		<script src="/js/web3.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
+		<script>
+
+		web3 = new Web3(web3.currentProvider);
+
+		if (web3.version.network != '3') {
+
+			alert("Wrong network detected. Please switch to the Ropsten test network.");
+		}
+	
+		else {
+
+			alert("Connected to the Ropsten test network.");
+		}
+		
+		</script>
+
+		<script src="mgvtok.js"></script>
+		<script src="mgvdex.js"></script>
+		<script src="mgvdao.js"></script>
+
+
+	
+
+</head>
+
+
+
+
+
+
+<body class = "grid">
+
+
+
+<header>
+
+	<h5 id="titre" class="soushead">My DAO</h5>
+	<div id="status" class="soushead"></div>
+	
+</header>
+
+
+
+<div class="photo">
+
+	<div class="slideshow-container">
+	
+			
+	<div class="mySlides fade"><a href="https://ipfs.io/ipfs/QmREm6seRqVtqe241L76s4rrVnMvE7B6zXyzrcvHoRgb9g"><img src="https://ipfs.io/ipfs/QmREm6seRqVtqe241L76s4rrVnMvE7B6zXyzrcvHoRgb9g" style="width:100%"></a></div>
+	
+	<div class="mySlides fade"><a href="https://ipfs.io/ipfs/QmWhqtf6RRLA6kHG43UWCaiUaHufXBJnc1at47pLnMoZPj"><img src="https://ipfs.io/ipfs/QmWhqtf6RRLA6kHG43UWCaiUaHufXBJnc1at47pLnMoZPj" style="width:100%"></a></div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+	</div>
+	
+	
+	
+	<div style="text-align:center">
+	
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	
+	
+	</div>
+	
+	<script src="slider.js"></script>
+	
+</div>
+
+
+
+
+<div class="menu">
+
+<div class = "element"><a href="#" class="button" onClick='news()'><span>News</span></a></div>
+<div class = "element"><a href="#" class="button" onClick='thedao()'><span>DAO</span></a></div>
+<div class = "element"><a href="#" class="button" onClick='contract()'><span>Token</span></a></div>
+<div class = "element"><a href="#" class="button" onClick='exchange()'><span>DEX</span></a></div>
+<div class = "element"><a href="asso.html" class="button"><span>Association</span></a></div>
+			
+			
+			
+
+</div>
+
+
+
+
+<div class="info">
+
+	
+
+			<p id = 'name' class="enav">Name:</p>
+		
+			<p id = 'symbol' class="enav">Symbol:</p>
+			
+			<p id = 'totalsupply' class="enav">Total Supply:</p>
+			
+			<p id = 'decimals' class="enav">Decimals:</p>
+		
+			<p class="enav"><a href="cgu" class="button">White Paper</a> </p>
+			<p class="enav"><a href="cgu" class="button">CGU</a> </p>
+			
+			
+</div>
+
+
+
+
+<div id="result" class="result">
+
+</div>
+
+
+
+
+	
+<script src="mgv.js"></script>
+
+
+
+
+
+</body>
+
+</html>
+	
